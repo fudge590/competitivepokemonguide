@@ -1,0 +1,42 @@
+.btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    margin: -1em;
+    background-blend-mode: overlay;
+}
+
+.navigation {
+    background-color: darkblue;
+    height: 60px;
+    width: 100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+
+.navigation ul {
+    height: 60px;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 20px;
+    transition: background-color .5s;
+}
+
+.navigation ul li:hover {
+    background-color:steelblue;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+}

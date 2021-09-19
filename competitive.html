@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<head>
+    <title>Competitive Pokemon</title>
+    <link href="competitive-style.css" rel="stylesheet">
+    <link href="menu-bar.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Prompt&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@500&family=Prompt&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+        </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul style="list-style-type: none;">
+            <!--Space for future "home" or "menu" page categories-->
+            <li>
+                <a href="./index.html" class="btn">Introduction</a>
+            </li>
+            <li>
+                <a href="./competitive.html" class="btn">About competitive</a>
+            </li>
+            <li>
+                <a href="./getting-started.html" class="btn">Getting started</a>
+            </li>
+            <li>
+                <a href="./terminology.html" class="btn">Terminology</a>
+            </li>
+            <li>
+                <a href="./references.html" class="btn">References</a>
+            </li>
+            </ul>
+    </nav>
+    <br><br>
+<section class="header-section">
+    <h1 class="title" id="main-title">
+        About Competitive Pokemon
+    </h1>
+        <p>
+            Competitive pokemon is complex, and may take a while to learn. You will not be able to put four moves on a pokemon and pick whatever sounds 
+            cool, get away with it, and win the battle. Understanding the mechanics of pokemon in battle is crucial to be able to clutch victory from
+            the grasp of the opponent. Every turn, every move you make is of utmost importance to be able to differentiate the good trainers from the best ones.
+            That being said, there are some basics that you can learn before delving into competitive pokemon.
+        </p>
+</section>
+<div class=mechanics>
+    <h2>
+        Gameplay mechanics
+    </h2>
+        <p>
+            There are numerous game mechanics that factor into defeating your opponent. By understanding these, we can make the most optimal decision
+            based on the situation that we are in. To defeat your opponent, you have to, of course, knock all their pokemon out by dealing damage to
+            lower their HP to zero. Understanding how to effectively deal damage is one of the simplest yet hardest to master mechanic in pokemon.
+            Since it is a mechanic that we are all familiar with, let's go through that first!
+        </p>
+<section class=type>
+    <h3>
+        Type
+    </h3>
+        <p>
+            Each pokemon and move has a type. You may be familiar with the fire, water and grass types, and they each counter one another, similar to
+            rock, paper and scissors. Here's an image for reference.
+        </p>
+            <img src="https://static.tvtropes.org/pmwiki/pub/images/pokemon_1stgen.jpg" alt="water beats fire, fire beats grass, grass beats water"
+            id="figure-2-1">
+            <section class="figure-description">
+                Figure 2.1, The fire, water, grass trinity
+            </section>
+        <p>
+            Although this is a simple diagram of the effectiveness of the three starter types against each other, there are many more pokemon types.
+            A chart of the type effectiveness of all the pokemon types looks something like this:
+        </p>
+            <img src="https://img.pokemondb.net/images/typechart.png" alt="complete type effectiveness chart" id="figure-2-2">
+            <section class="figure-description">
+                Figure 2.2, Complete type effectiveness chart by pokemondb.net
+            </section>
+        <p>
+            Now, THIS looks mind boggling.<br>
+            "How am I even supposed to remember all THAT?", you ask yourself. Well, fear not, we'll get back to that later. For now, we just have to
+            focus on 3 things: Effectiveness, resistances and immunities.
+        </p>
+    <h4>
+        Effectiveness
+    </h4>
+        <p>
+            We all know that fire is super effective against grass. This means that the damage of a fire move against a grass type pokemon factors in the
+            effectiveness of the move, which makes it 2x effective, essentially doubling the damage against the target.<br>
+            Let's look at another example. Fire is super effective against bug type, which means that fire damage dealt is 2x against a bug type.<br>
+            However, what happens when a pokemon with two types, grass and bug, is hit by a fire move? The grass/bug pokemon would recieve a whopping
+            4x damage from the fire move! Type effectiveness is multiplicative, not additive, so since 2 multiplied by 2 is 4, we would say that the
+            grass/bug pokemon is 4x weak to fire. This applies for resistances too. We'll get to that in the next section.
+        </p>
+            <img src="https://64.media.tumblr.com/tumblr_kyomu8Pwuo1qa12hvo1_500.jpg" alt="It's super effective!" id="figure-2-3">
+            <section class="figure-description">
+                Figure 2.3, A flying type move being used against a fighting type pokemon
+            </section>
+        <p>
+            A good trick to estimate damage is to multiply the move's power by the type effectiveness, then see if it can kill the pokemon. For example,
+            if you just used Waterfall(80BP) to deal 40% HP regular damage, you essentially can use a move with the same 80BP to deal 80% HP damage to the same pokemon if you deal super effective damage. By the way,
+            BP stands for Base Power. There's a "Terminology" page that you can check out later, but for now I'll make sure it's easy to understand.
+        </p>
+    <h4>
+        Resistances
+    </h4>
+        <p>
+            Resistances work the same way as effectiveness, except that it's just the opposite. It cuts the damage of uneffective attacks either by
+            1/2 or by 1/4, depending on whether the pokemon is 2x resistant or 4x resistant respectively. Soaking up damage may not be as cool, flashy or exciting
+            as OHKO-ing(One Hit Knock-Out) an opponent's pokemon, but it is vital in making sure that your own pokemon do not suffer that fate.
+        </p>
+    <h4>
+        Immunities
+    </h4>
+        <p>
+            Some pokemon types are immune to other types, meaning that they are not affected one bit. These interactions are fairly common,
+            so it's something that you have to take into consideration. These are:<br><br>
+            <a href="https://pokemondb.net/type/normal" target="_blank" class="type-icon type-normal">Normal</a> immune to <a href="https://pokemondb.net/type/ghost" target="_blank" class="type-icon type-ghost">Ghost</a> ↰<br>
+            <a href="https://pokemondb.net/type/ghost" target="_blank" class="type-icon type-ghost">Ghost</a> immune to <a href="https://pokemondb.net/type/normal" target="_blank" class="type-icon type-normal">Normal</a> (yes, it goes both ways)<br>
+            <a href="https://pokemondb.net/type/ghost" target="_blank" class="type-icon type-ghost">Ghost</a> immune to <a href="https://pokemondb.net/type/fighting" target="_blank" class="type-icon type-fighting">Fighting</a><br>
+            <a href="https://pokemondb.net/type/dark" target="_blank" class="type-icon type-dark">Dark</a> immune to <a href="https://pokemondb.net/type/psychic" target="_blank" class="type-icon type-psychic">Psychic</a><br>
+            <a href="https://pokemondb.net/type/fairy" target="_blank" class="type-icon type-fairy">Fairy</a> immune to <a href="https://pokemondb.net/type/dragon" target="_blank" class="type-icon type-dragon">Dragon</a><br>
+            <a href="https://pokemondb.net/type/ground" target="_blank" class="type-icon type-ground">Ground</a> immune to <a href="https://pokemondb.net/type/electric" target="_blank" class="type-icon type-electric">Electric</a><br>
+            <a href="https://pokemondb.net/type/steel" target="_blank" class="type-icon type-steel">Steel</a> immune to <a href="https://pokemondb.net/type/poison" target="_blank" class="type-icon type-poison">Poison</a><br>
+            <a href="https://pokemondb.net/type/flying" target="_blank" class="type-icon type-flying">Flying</a> immune to <a href="https://pokemondb.net/type/ground" target="_blank" class="type-icon type-ground">Ground</a><br>
+        </p>
+            <section class="comment">
+                Look at these cute pokemon type buttons by the way! I got inspiration for these from <a href="https://pokemondb.net/pokedex/steelix" target="_blank" class="link">pokemondb</a>, and
+                if you click on them, you'll find the links to their pokemondb pages as well. 
+            </section>
+        <p>
+            Although it may look like a lot to take in, you'll find that a majority of it makes perfect sense. Fighting can't hit ghost? Well, duh.
+            Ground can't hit flying? Of course! Electric can't hit ground......you get the gist. 
+        </p>
+        <section class="fun-fact">
+            
+            Fun fact! Did you know that when the fairy type was introduced in gen 6, it was done largely out of consideration for dragon type? Back then,
+            the dragon types were only weak against ice and other dragon types. A strategy involved selecting the dragon type move Outrage(120BP) on a high attack
+            dragon type, which would then sweep entire teams because of its high attack stat. This proved to be extremely un-fun, and Game Freak promptly decided that enough was enough.
+        
+        </section>
+</section>
+</div>
+<div>
+    <h3>
+        Stats
+    </h3>
+        <p>
+            Every pokemon has its own stats. Let's take a look at the stats of Charizard, for example. This was sourced from <a href="https://pokemondb.net/pokedex/charizard#dex-stats" target="_blank" class="link">pokemondb.net.</a>
+        </p>
+            <img src="https://i.ibb.co/mFgX9YJ/charizard-bst-pokemondb.png" alt="charizard stats" id="figure-2-4">
+            <section class="figure-description">
+                Figure 2.4, Charizard's base stats
+            </section>
+        <p>
+            Each pokemon has all 6 stats: HP, Atk, Def, SpA, SpD and Speed. These are all abbreviations for the stats, in the same order that the picture shows stats.
+            Each stat has its own unique role in a pokemon, and if you've ever played RPG or MOBA games, you might be familiar with a few of them. If not, fear not, that's why I'm here to explain! :D
+            <br>
+        </p>
+    <h4>
+        HP
+    </h4>
+        <p>
+            HP is probably the simplest stat to understand. A pokemon's HP is just the number of hitpoints it has. For example, a 1000HP pokemon will most likely
+            outlive a 500HP pokemon. There are a few other factors to consider, but for now we can just focus on the HP. A higher HP also means that %HP restoring moves,
+            like Recover, would restore more HP, as Recover will restore 50% of a pokemon's max HP. However, it also means that moves like Giga Drain will absorb
+            more HP from the pokemon, resulting in the pokemon who absorbed HP will have more HP.
+        </p>
+    <h4>
+        Atk/SpA vs Def/SpD
+    </h4>
+        <p>
+            The attack and special-attack stat is where things get fun. We can start by looking at Atk and SpA like Physical and Magic damage. They are both
+            different forms of damage, but they do the same thing: deal damage. If you've ever played an RPG or MOBA game, you'll know that Physical damage targets
+            a player's Armour values, and Magic damage targets Magic Resist values.<br> In pokemon, Atk targets Def values, and SpA targets SpD values. There are two types of damaging moves in pokemon: Physical and Special.
+            Physical moves use Atk in damage calculation, and Special moves use SpA. Let's take a look
+            at <a href="https://pokemondb.net/pokedex/steelix" target="_blank" class="link">Steelix's</a> stats:
+        </p>
+            <img src="https://i.ibb.co/X4x1s9R/steelix-bst-pokemondb.png" alt="steelix stats" id="figure-2-5">
+            <section class="figure-description">
+                Figure 2.5, Steelix's base stats
+            </section>
+        <p>
+            Wow! Look at that massive defense stat! Steelix takes Physical hits like a champ. However, since his SpD isn't that high, an appropriate strategy
+            would be to use an attacker who can use Special damage to take Steelix down. 
+        </p>
+    <h4>
+        Speed
+    </h4>
+        <p>
+            Speed is the most underrated and unpopular stat for many players looking to transition to competitive pokemon. Many players do not understand
+            how important speed is in closing out games. Speed is the stat that decides who goes first in a turn, simply decided based on which pokemon has a higher
+            speed value.<br> Although it doesn't sound that important, it actually makes every turn you get have an advantage if you have a high speed. Having a high
+            speed means that few pokemon can outspeed your pokemon. If you manage to boost your offensive stats with a high speed, it means that you are able to
+            constantly OHKO any pokemon that comes into the battlefield, without caring about your defensive stats.
+        </p>
+    <h3>
+        Stat changes
+    </h3>
+        <p>
+            Pokemon's stats can be changed by moves, status effects or through other means, such as abilities. Stat changes play a crucial role in competitive pokemon,
+            providing counterplay. At the same time, if you play around the possible counterplay, you will be able to set up your own pokemon for some
+            big plays. 
+        </p>
+    <h4>
+        Stat changing terminology
+    </h4>
+        <p>
+            Each pokemon can be stat boosted in each stat(except HP) up to 6 stacks(also called stages). Each stack contributes 0.5x of a stat, and we call adding a stack +1. For example,
+            a pokemon with +1 Atk will have 1.5x Atk, a pokemon with +2 Atk will have 2x Atk. A pokemon with +6 Atk at max stacks will have
+            +6 Atk.<br>The only exceptions to this would be for evasion and accuracy, where each stack only contributes 0.33x of each stat.
+        </p>
+    <h4>
+        Notable stat changing moves
+    </h4>
+        <p>
+            There are many moves that can cause stat change, but notable ones are:<br><br>
+            + Atk:<br>
+            Swords dance(+2 Atk)<br>
+            Dragon dance(+1 Atk, +1 Speed)<br>
+            Belly drum(+6 Atk, -50% max HP)<br>
+            Shell smash(+2 Atk, +2 SpA, +2 Speed, -1 Def, -1 SpD)<br><br>
+
+            + SpA:<br>
+            Nasty plot(+2 SpA)<br>
+            Calm mind(+1 SpA, +1 SpD)<br>
+            Quiver dance(+1 SpA, +1 SpD, +1 Speed)<br>
+            Shell smash(+2 Atk, +2 SpA, +2 Speed, -1 Def, -1 SpD)<br>
+        </p>
+    <h4>
+        Notable stat changing abilities/other factors that cause stat change
+    </h4>
+        <p>
+            Notable abilities that can cause stat change are:<br><br>
+            On KO(when the pokemon knocks out an opponent):<br>
+            Chilling neigh(+1 Atk)<br>
+            Grim neigh(+1 SpA)<br>
+            Beast boost(+1 Highest Stat)(except HP)<br>
+            Moxie(+1 Atk)<br><br>
+            On switch-in:<br>
+            Intimidate(target -1 Atk)<br><br>
+            Status effects that cause stat change<span class="important">(VERY IMPORTANT!)</span>:<br>
+            Burn(Halves Atk)<br>
+            Paralysis(Halves Speed)<br>
+            See the status effects section below for more info.
+        </p>
+    <h4>
+        EVs and IVs
+    </h4>
+        <p>
+            A pokemon's base stats can be naturally improved through EVs and IVs. IVs are automatically generated on birth, so we don't really
+            have to worry about them as in competitive, we can set them as the highest value, 31 for each stat. However, managing EVs are when it starts to get interesting.
+            A pokemon can achieve a maximum of 508 EVs, and can invest a maximum of 252 EVs in each stat.
+        </p>
+            <img src="https://i.ibb.co/gWTrPVJ/garchomp.webp" alt="garchomp" id="figure-2-6">
+            <section class="figure-description">
+                Figure 2.6, Garchomp
+            </section>
+        <p>
+            Look at this guy. Isn't he just so cute? This is garchomp, one of my favourite pokemon. We'll be using him for our example here.
+        </p>
+            <img src="https://i.ibb.co/3sJYcX8/garchomp-bst-pokemonshowdown.png" alt="garchomp stats" id="figure-2-7">
+            <section class="figure-description">
+                Figure 2.7, Garchomp's uninvested(base) stats with IVs
+            </section><br>
+            <img src="https://i.ibb.co/HpfFkRM/garchomp-invested-bst-pokemonshowdown.png" alt="garchomp invested stats" id="figure-2-8">
+            <section class="figure-description">
+                Figure 2.8, Garchomp's EV invested stats
+            </section>
+        <p>
+            Since a pokemon has a maximum of 508 EVs, this means that a pokemon can fully invest two stats, and leave 4 EVs to put into another stat. Generally, this two stat investment is what
+            most pokemon benefit from, however, there are exceptions that I won't get into.<br>
+            If we look at the pictures above, we can see that investing EVs into the Atk and Speed stat does make a difference on our Garchomp. What if
+            I told you we could increase the stats even more?
+        </p>
+    <h4>
+        Natures
+    </h4>
+        <p>
+            Every pokemon has access to all natures. A nature is a personality trait of a pokemon(adamant, modest, jolly etc.) that raises one of the stats of the pokemon by 10%,
+            but lowers another stat by 10%. Let's take a look at the Garchomp from before.
+        </p>
+            <img src="https://i.ibb.co/RchCY31/garchomp-nature-invested-bst-pokemonshowdown.png" alt="garchomp nature invested stats" id="figure-2-9">
+            <section class="figure-description">
+            Figure 2.9, Garchomp's EV and Adamant nature invested stats
+            </section>
+        <p>
+            Just look at the difference. Garchomp now has a whopping 394 Atk! Compare that to our uninvested and invested stats, and you'll see just how much
+            of a difference EVs and nature can make.<br>In this case, we used an Adamant nature on the garchomp(+Atk -SpA) to maximise the use of our nature.
+            Since garchomp is a physical attacker because of its high Atk stat, we should only teach it physical moves. Without the use of any special move,
+            our garchomp's SpA simply doesn't matter because it will not be used for anything at all.
+        </p>
+    <h3>
+        Status effects
+    </h3>
+        <p>
+            All pokemon can be afflicted with status effects. However, some are immune to their own kind of status effects. For example, an electric
+            type cannot be paralysed, a poison type cannot be poisoned, a grass type cannot be afflicted by powder moves etc.
+        </p>
+            <img src="https://i.ibb.co/n0bnYVj/hurt-by-poison.png" alt="bibarel is hurt by poison">
+            <section class="figure-description">
+                Figure 2.10, Bibarel inflicted with poison
+                </section>
+        <p>
+            There are two types of
+            status effects: volatile and non volatile.
+        </p>
+    <h4>
+        Volatile status effects
+    </h4>
+        <p>
+            Volatile status effects will go away after a while, and do not count towards moves like Hex, where it has different effects if the target is
+            afflicted with a non-volatile(major) status effect. Some examples of volatile status effects include:<br><br>
+            Confusion. A confused pokemon has a 33% chance to hurt itself instead of executing the selected move.<br>
+            Flinch. A pokemon who flinches cannot do anything.<br>
+            Taunt. A taunted pokemon cannot execute non-damaging moves like recover, toxic etc.<br>
+        </p>
+    <h4>
+        Non-volatile(major) status effects
+    </h4>
+        <p>
+            Non-volatile status effects are what most of us are familiar with. Poison, burn, paralysis are some examples and their effects are very
+            obvious and easy to understand. However, there are some hidden effects that status effects have that we may not know about. For example:<br><br>
+            <span class="type-icon type-fire" style="width: 3rem;">Burn</span> removes 1/8 max HP per turn, but also halves Atk stat. This includes all stat changes, so if a pokemon has been boosted to 1000Atk, the pokemon will have 500Atk if it is burnt.<br>
+            <span class="type-icon type-electric" style="width: 4.6rem;">Paralysis</span> gives a 25% chance of being paralyzed, but also halves Speed stat. It has the same logic as burn, so it halves the post-modifier Speed stat.<br><br>
+            Since non-volatile status effects still persist even when the pokemon is switched out, it is a great way to hinder strong physical attackers
+            in the opponent's team and render fast, annoying pokemon vulnerable to attacks.<br><br>
+            Some other great status effects to take note of are:<br><br>
+            <span class="type-icon type-poison" style="width: 4rem;">Poison</span> removes 1/8 max HP per turn.<br>
+            <span class="type-icon type-poison" style="width: 7.6rem;">Badly poisoned</span> pokemon get 1/16 max HP removed on the first turn, but it increases by 1/16 max HP on subsequent turns, per turn.
+            This means that on turn 1, 1/16 max HP is removed. On turn 2, 2/16(which is 1/8) max HP is removed. On turn 3, 3/16 max HP is removed etc.
+        </p>
+</div>
+</body>

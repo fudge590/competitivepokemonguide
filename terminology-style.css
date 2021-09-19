@@ -1,0 +1,75 @@
+body {
+    background: rgba(0, 0, 0, 0) url(https://i.ibb.co/yVQcWqF/dark-honeycomb.png);
+    background-blend-mode: darken;
+    background-size: initial;
+    position:relative;
+    margin-left: 30px;
+}
+
+p {
+    word-wrap: normal;
+    width: 60%;
+    font-size: 18px;
+    color:navajowhite;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color:cornflowerblue;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+    color:lightcoral;
+    font-size: 30px;
+    text-decoration:underline;
+}
+
+h4 {
+    font-family: 'Dosis', sans-serif;
+    color:seagreen;
+    font-size: 22px;
+    text-decoration:underline;
+}
+
+.term {
+    text-align: center;
+    width: 10%;
+}
+
+.description {
+    width: 40%;
+}
+
+.remarks {
+    width: 100%;
+}
+
+th {
+    color: whitesmoke;
+    border-top: 1px solid navajowhite;
+}
+
+td {
+    color:navajowhite;
+}
+
+table, th, td {
+    word-wrap: normal;
+    border-collapse: collapse;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: left;
+    width: 70%;
+    padding: 10px;
+    border-bottom: 1px solid navajowhite;
+}
